@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/pkg_tutorial/pkg_tutorial.egg-info/PKG-INFO
+../../build/pkg_tutorial/pkg_tutorial.egg-info/SOURCES.txt
+../../build/pkg_tutorial/pkg_tutorial.egg-info/dependency_links.txt
+../../build/pkg_tutorial/pkg_tutorial.egg-info/entry_points.txt
+../../build/pkg_tutorial/pkg_tutorial.egg-info/requires.txt
+../../build/pkg_tutorial/pkg_tutorial.egg-info/top_level.txt
+../../build/pkg_tutorial/pkg_tutorial.egg-info/zip-safe
+pkg_tutorial/__init__.py
+pkg_tutorial/minimal_publisher.py
+resource/pkg_tutorial
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

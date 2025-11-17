@@ -1,0 +1,33 @@
+running egg_info
+creating ../../build/pkg_tutorial/pkg_tutorial.egg-info
+writing ../../build/pkg_tutorial/pkg_tutorial.egg-info/PKG-INFO
+writing dependency_links to ../../build/pkg_tutorial/pkg_tutorial.egg-info/dependency_links.txt
+writing requirements to ../../build/pkg_tutorial/pkg_tutorial.egg-info/requires.txt
+writing top-level names to ../../build/pkg_tutorial/pkg_tutorial.egg-info/top_level.txt
+writing manifest file '../../build/pkg_tutorial/pkg_tutorial.egg-info/SOURCES.txt'
+reading manifest file '../../build/pkg_tutorial/pkg_tutorial.egg-info/SOURCES.txt'
+writing manifest file '../../build/pkg_tutorial/pkg_tutorial.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/build
+creating /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/build/lib
+creating /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/build/lib/pkg_tutorial
+copying pkg_tutorial/__init__.py -> /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/build/lib/pkg_tutorial
+copying pkg_tutorial/minimal_publisher.py -> /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/build/lib/pkg_tutorial
+running install
+running install_lib
+creating /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/lib/python3.12/site-packages/pkg_tutorial
+copying /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/build/lib/pkg_tutorial/__init__.py -> /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/lib/python3.12/site-packages/pkg_tutorial
+copying /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/build/lib/pkg_tutorial/minimal_publisher.py -> /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/lib/python3.12/site-packages/pkg_tutorial
+byte-compiling /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/lib/python3.12/site-packages/pkg_tutorial/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/lib/python3.12/site-packages/pkg_tutorial/minimal_publisher.py to minimal_publisher.cpython-312.pyc
+running install_data
+creating /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/share/ament_index
+creating /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/share/ament_index/resource_index
+creating /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/share/ament_index/resource_index/packages
+copying resource/pkg_tutorial -> /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/share/ament_index/resource_index/packages
+copying package.xml -> /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/share/pkg_tutorial
+running install_egg_info
+Copying ../../build/pkg_tutorial/pkg_tutorial.egg-info to /home/ric/Desktop/ROS_projects/digikey_tutorial_ws/install/pkg_tutorial/lib/python3.12/site-packages/pkg_tutorial-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/ric/Desktop/ROS_projects/digikey_tutorial_ws/build/pkg_tutorial/install.log'
