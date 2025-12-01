@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.
-=======
 ''' UI (node1)
     1. Implement a simple textual interface to retrieve the user command 
         (i.e., you can use cin (c++) or input (python). 
@@ -16,4 +13,3 @@ def main():
     node = Node('UI')
     rclpy.spin(node)
     rclpy.shutdown()
->>>>>>> edf5cbd (creating fundation)

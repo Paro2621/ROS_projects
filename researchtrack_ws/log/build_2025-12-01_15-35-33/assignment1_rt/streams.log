@@ -1,0 +1,43 @@
+[0.706s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/src/assignment1_rt': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment1_rt build --build-base /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build install --record /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/install.log --single-version-externally-managed install_data
+[0.937s] running egg_info
+[0.937s] creating ../../build/assignment1_rt/assignment1_rt.egg-info
+[0.956s] writing ../../build/assignment1_rt/assignment1_rt.egg-info/PKG-INFO
+[0.956s] writing dependency_links to ../../build/assignment1_rt/assignment1_rt.egg-info/dependency_links.txt
+[0.956s] writing entry points to ../../build/assignment1_rt/assignment1_rt.egg-info/entry_points.txt
+[0.956s] writing requirements to ../../build/assignment1_rt/assignment1_rt.egg-info/requires.txt
+[0.956s] writing top-level names to ../../build/assignment1_rt/assignment1_rt.egg-info/top_level.txt
+[0.956s] writing manifest file '../../build/assignment1_rt/assignment1_rt.egg-info/SOURCES.txt'
+[0.989s] reading manifest file '../../build/assignment1_rt/assignment1_rt.egg-info/SOURCES.txt'
+[0.989s] writing manifest file '../../build/assignment1_rt/assignment1_rt.egg-info/SOURCES.txt'
+[0.989s] running build
+[0.989s] running build_py
+[0.989s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build
+[0.990s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib
+[0.990s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt
+[0.990s] copying assignment1_rt/__init__.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt
+[0.990s] copying assignment1_rt/TurtleManager.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt
+[0.990s] copying assignment1_rt/UI.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt
+[0.990s] running install
+[0.996s] running install_lib
+[1.016s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt
+[1.016s] copying /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt/__init__.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt
+[1.016s] copying /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt/TurtleManager.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt
+[1.016s] copying /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt/UI.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt
+[1.016s] byte-compiling /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt/__init__.py to __init__.cpython-312.pyc
+[1.016s] byte-compiling /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt/TurtleManager.py to TurtleManager.cpython-312.pyc
+[1.017s] byte-compiling /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt/UI.py to UI.cpython-312.pyc
+[1.017s] running install_data
+[1.017s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/share/ament_index
+[1.017s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/share/ament_index/resource_index
+[1.018s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/share/ament_index/resource_index/packages
+[1.018s] copying resource/assignment1_rt -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/share/ament_index/resource_index/packages
+[1.018s] copying package.xml -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/share/assignment1_rt
+[1.018s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/share/assignment1_rt/launch
+[1.018s] copying launch/assignment1.launch.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/share/assignment1_rt/launch
+[1.018s] running install_egg_info
+[1.036s] Copying ../../build/assignment1_rt/assignment1_rt.egg-info to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt-0.1.0-py3.12.egg-info
+[1.036s] running install_scripts
+[1.152s] Installing TurtleManager script to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/assignment1_rt
+[1.152s] Installing UI script to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/assignment1_rt
+[1.153s] writing list of installed files to '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/install.log'
+[1.178s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/src/assignment1_rt' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment1_rt build --build-base /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build install --record /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/install.log --single-version-externally-managed install_data

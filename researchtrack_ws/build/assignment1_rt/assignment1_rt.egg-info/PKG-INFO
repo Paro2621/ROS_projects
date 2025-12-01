@@ -2,7 +2,6 @@ Metadata-Version: 2.1
 Name: assignment1-rt
 Version: 0.1.0
 Summary: ROS2 package example
-Maintainer: ric
-Maintainer-email: riccardoparotelli@gmail.com
+Maintainer: Your Name
+Maintainer-email: you@example.com
 License: Apache License 2.0
-Provides-Extra: test

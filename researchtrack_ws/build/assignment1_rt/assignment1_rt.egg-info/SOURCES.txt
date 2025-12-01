@@ -1,3 +1,4 @@
+package.xml
 setup.cfg
 setup.py
 ../../build/assignment1_rt/assignment1_rt.egg-info/PKG-INFO
@@ -11,6 +12,7 @@ assignment1_rt/TurtleManager.py
 assignment1_rt/UI.py
 assignment1_rt/__init__.py
 launch/assignment1.launch.py
+resource/assignment1_rt
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
