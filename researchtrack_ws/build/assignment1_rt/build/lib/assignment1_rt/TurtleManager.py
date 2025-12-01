@@ -34,19 +34,22 @@ class TurtleManager(Node):
         self._current_pose_t1 = [5,5,0]
         self._current_pose_t2 = [5,5,0]
         self._cmd = Twist()
+        self._distance = Float32()
         self.distance = None
     
     def _publishDistance(self):
-        self.distance = math.sqrt(sum((self._current_pose_t1 - self._current_pose_t1)**2))
-        self._cmd_pub.publish(self.distance)
+        t1 = self._current_pose_t1
+        t2 = self._current_pose_t2 
+        self._distance.data = math.sqrt((t1[0] - t2[0])**2 + (t1[1] - t2[1])**2)
+        print(self._distance)
+        self._cmd_pub.publish(self._distance)
 
     def _t1pose(self, msg: Pose):
-        self._current_pose_t1 = msg
-        self.get_logger().info(f"Current position: {msg.x}, {msg.y}")
+        self._current_pose_t1 = [msg.x, msg.y, msg.theta]
+        # self.get_logger().info(f"Current position: {msg.x}, {msg.y}")
 
     def _t2pose(self, msg: Pose):
-        self._current_pose_t2 = msg
-        self.get_logger().info(f"Current position: {msg.x}, {msg.y}")
+        self._current_pose_t2 = [msg.x, msg.y, msg.theta]
 
     def _publish_cmd(self):
         # For now: simple example → constant forward speed
@@ -62,7 +65,7 @@ def main(args=None):
     # Initialize and run node
     try:
         rclpy.init()
-        node = Distance()
+        node = TurtleManager()
         rclpy.spin(node)
 
     # Catch ctrl+c or shutdown request

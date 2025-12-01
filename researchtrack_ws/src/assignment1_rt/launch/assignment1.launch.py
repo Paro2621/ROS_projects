@@ -14,7 +14,7 @@ def generate_launch_description():
         ),
 
         TimerAction(        # Spawn turtle2 using ros2 service call
-            period=1.0,     # wait for /spawn to be available
+            period=0.5,     # wait for /spawn to be available
             actions=[
                 ExecuteProcess(
                     cmd=[
@@ -25,5 +25,17 @@ def generate_launch_description():
                     output='screen'
                 )
             ]
-        )
+        ),
+
+        TimerAction(        # Run TurtleManager
+            period=1.0,     # small delay to not incasinate (technical term) the spawn of the second turtle
+            actions=[
+                Node(
+                    package='assignment1_rt',
+                    executable='TurtleManager',
+                    name='TurtleManager',
+                    output='screen'
+                ),
+            ]
+        ),
     ])
