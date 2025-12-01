@@ -1,0 +1,40 @@
+[0.960s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/src/turtlesim_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_controller build --build-base /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build install --record /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/install.log --single-version-externally-managed install_data
+[1.202s] running egg_info
+[1.203s] creating ../../build/turtlesim_controller/turtlesim_controller.egg-info
+[1.220s] writing ../../build/turtlesim_controller/turtlesim_controller.egg-info/PKG-INFO
+[1.221s] writing dependency_links to ../../build/turtlesim_controller/turtlesim_controller.egg-info/dependency_links.txt
+[1.221s] writing entry points to ../../build/turtlesim_controller/turtlesim_controller.egg-info/entry_points.txt
+[1.221s] writing requirements to ../../build/turtlesim_controller/turtlesim_controller.egg-info/requires.txt
+[1.221s] writing top-level names to ../../build/turtlesim_controller/turtlesim_controller.egg-info/top_level.txt
+[1.221s] writing manifest file '../../build/turtlesim_controller/turtlesim_controller.egg-info/SOURCES.txt'
+[1.255s] reading manifest file '../../build/turtlesim_controller/turtlesim_controller.egg-info/SOURCES.txt'
+[1.255s] writing manifest file '../../build/turtlesim_controller/turtlesim_controller.egg-info/SOURCES.txt'
+[1.256s] running build
+[1.256s] running build_py
+[1.256s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build
+[1.256s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib
+[1.256s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib/turtlesim_controller
+[1.256s] copying turtlesim_controller/turtlesim_controller.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib/turtlesim_controller
+[1.256s] copying turtlesim_controller/__init__.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib/turtlesim_controller
+[1.256s] copying turtlesim_controller/turtlesim_subscriber.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib/turtlesim_controller
+[1.256s] running install
+[1.262s] running install_lib
+[1.280s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller
+[1.281s] copying /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib/turtlesim_controller/turtlesim_controller.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller
+[1.281s] copying /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib/turtlesim_controller/__init__.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller
+[1.281s] copying /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build/lib/turtlesim_controller/turtlesim_subscriber.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller
+[1.281s] byte-compiling /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller/turtlesim_controller.py to turtlesim_controller.cpython-312.pyc
+[1.282s] byte-compiling /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller/__init__.py to __init__.cpython-312.pyc
+[1.282s] byte-compiling /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller/turtlesim_subscriber.py to turtlesim_subscriber.cpython-312.pyc
+[1.282s] running install_data
+[1.283s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/share/ament_index
+[1.283s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/share/ament_index/resource_index
+[1.283s] creating /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/share/ament_index/resource_index/packages
+[1.283s] copying resource/turtlesim_controller -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/share/ament_index/resource_index/packages
+[1.283s] copying package.xml -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/share/turtlesim_controller
+[1.283s] running install_egg_info
+[1.304s] Copying ../../build/turtlesim_controller/turtlesim_controller.egg-info to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages/turtlesim_controller-0.0.0-py3.12.egg-info
+[1.305s] running install_scripts
+[1.429s] Installing turtlesim_subscriber script to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/turtlesim_controller
+[1.430s] writing list of installed files to '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/install.log'
+[1.475s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/src/turtlesim_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_controller build --build-base /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/build install --record /home/ric/Desktop/ROS_projects/researchtrack_ws/build/turtlesim_controller/install.log --single-version-externally-managed install_data

@@ -13,4 +13,5 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 turtlesim_controller/__init__.py
+turtlesim_controller/turtlesim_controller.py
 turtlesim_controller/turtlesim_subscriber.py
