@@ -12,6 +12,7 @@ import time
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 
+from example_interfaces.msg import Float32
 from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
 from rt1_interfaces.msg import Comando
@@ -38,7 +39,7 @@ def main():
                 print("Invalid selection.")
                 continue
 
-            cmd_raw = input("Insert forward and angular speed: ").split()
+            cmd_raw = input("Insert forward [and angular speed]: ").split()
 
             cmd = Comando()
             cmd.target = int(t)
