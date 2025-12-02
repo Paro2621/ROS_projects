@@ -1,0 +1,6 @@
+{
+  "package_name": "rt1_interfaces",
+  "non_idl_tuples": [
+    "/home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces:msg/Comando.msg"
+  ]
+}

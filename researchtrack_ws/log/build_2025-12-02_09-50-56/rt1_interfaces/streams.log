@@ -1,0 +1,20 @@
+[0.205s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces -DCMAKE_INSTALL_PREFIX=/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces
+[0.216s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.413s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.505s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.529s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.537s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.547s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.559s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.595s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.602s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.604s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.604s]   rosidl_generate_interfaces() the passed file 'msg/Num.msg' doesn't exist
+[0.604s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.605s]   '/home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces'
+[0.605s] Call Stack (most recent call first):
+[0.605s]   CMakeLists.txt:30 (rosidl_generate_interfaces)
+[0.605s] 
+[0.605s] [0m
+[0.605s] -- Configuring incomplete, errors occurred!
+[0.610s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces -DCMAKE_INSTALL_PREFIX=/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces

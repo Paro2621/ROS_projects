@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ef9743ec134fb04cf4a3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "rt1_interfaces__py",
+					"jsonFile" : "directory-rt1_interfaces__py-1f47e84d6b279ac7a98e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces/rt1_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rt1_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rt1_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rt1_interfaces_egg-2b548adb7f014f5de719.json",
+					"name" : "ament_cmake_python_build_rt1_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rt1_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rt1_interfaces-1aa12cc554a1dad7d4bc.json",
+					"name" : "ament_cmake_python_copy_rt1_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces-78e6b990fd4a21450501.json",
+					"name" : "rt1_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__cpp-c9dad2157fc246fcf7ee.json",
+					"name" : "rt1_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rt1_interfaces__py::@572f5c553d283b1396b2",
+					"jsonFile" : "target-rt1_interfaces__py-ba6f67371d43c541e5b5.json",
+					"name" : "rt1_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_generator_c-9d83f2ceb316f4adb6ec.json",
+					"name" : "rt1_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_generator_py-a9f7d6f6ec377f2b8f89.json",
+					"name" : "rt1_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_generator_type_description-969d40a6ca55f0dbcfbe.json",
+					"name" : "rt1_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_typesupport_c-cec1985ec2719a21526d.json",
+					"name" : "rt1_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_typesupport_cpp-0e6949a2afa1e66993de.json",
+					"name" : "rt1_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_typesupport_fastrtps_c-35a74a3185e7025c7f35.json",
+					"name" : "rt1_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_typesupport_fastrtps_cpp-a90fb23a26e908702e9b.json",
+					"name" : "rt1_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_typesupport_introspection_c-63c73a4407bce49d8397.json",
+					"name" : "rt1_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces__rosidl_typesupport_introspection_cpp-fd202df2831aef608dec.json",
+					"name" : "rt1_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces_s__rosidl_typesupport_c-18b5bdd5cc8ee6413132.json",
+					"name" : "rt1_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces_s__rosidl_typesupport_fastrtps_c-8eed048b59f37efa4efe.json",
+					"name" : "rt1_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces_s__rosidl_typesupport_introspection_c-1cb5821fc073805f0712.json",
+					"name" : "rt1_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rt1_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rt1_interfaces_uninstall-32f4fcd076ab3dc30911.json",
+					"name" : "rt1_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3feb4cc579500c254e49.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces",
+		"source" : "/home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

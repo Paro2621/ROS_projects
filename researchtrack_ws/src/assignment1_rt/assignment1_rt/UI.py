@@ -1,84 +1,111 @@
 ''' UI (node1)
-    [ ] Implement a simple textual interface to retrieve the user command 
+    [x] Implement a simple textual interface to retrieve the user command 
         (i.e., you can use cin (c++) or input (python). 
         The user should be able to select the robot they want to control (turtle1 or turtle2), and the velocity of the robot
-    [ ] The command should be sent for 1 second, and then the robot should stop, and the user should be able again to insert the command again
-'''
-'''
-A node that checks the relative distance between turtle1 and turtle2 and:
-    [x] publish on a topic the distance (you can use a std_msgs/Float32 for that)
-    [ ] stops the moving turtle if the two turtles are “too close” (you may set a threshold to monitor that)
-    [ ] stops the moving turtle if the position is too close to the boundaries (.e.g, x or y > 10.0, x or y < 1.0
+    [x] The command should be sent for 1 second, and then the robot should stop, and the user should be able again to insert the command again
 '''
 
 import rclpy
 import math
+import time
 
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
-from example_interfaces.msg import Float32
 
 from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
+from rt1_interfaces.msg import Comando
 
-class TurtleManager(Node):
+
+class UI(Node):
     def __init__(self):
-        # Call the Node class constructor with the node name
-        super().__init__('TurtleManager')
+        super().__init__('ui')
 
-        # Publisher
-        self._distpub = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
-        self._distpub = self.create_publisher(Twist, 'turtle2/cmd_vel', 10)
+        # Subscribers
+        self.sub1 = self.create_subscription(Pose, 'turtle1/pose', self._t1gp, 10) # _t1gp -> turtle 1 get pose
+        self.sub2 = self.create_subscription(Pose, 'turtle2/pose', self._t2gp, 10)
 
-        # Timer to publish commands periodically
-        self._timer = self.create_timer(1, self._publishDistance)
+        # Publisher of Comando
+        self.cmd_pub = self.create_publisher(Comando, 'UI/comando', 10)
 
-        # Internal state
-        self._cmd = Twist()
-        self._distance = Float32()
-        self.distance = None
-    
-    def _publishDistance(self):
-        t1 = self._current_pose_t1
-        t2 = self._current_pose_t2 
-        if (t1 != None) & (t2 != None):
-            self._distance.data = math.sqrt((t1[0] - t2[0])**2 + (t1[1] - t2[1])**2)
-            self._distpub.publish(self._distance)
+        self.pose1 = None
+        self.pose2 = None
 
-    def _t1pose(self, msg: Pose):
-        self._current_pose_t1 = [msg.x, msg.y, msg.theta]
-        # self.get_logger().info(f"Current position: {msg.x}, {msg.y}")
+    def _t1gp(self, msg): # turtle 1 get pose
+        self.pose1 = msg
 
-    def _t2pose(self, msg: Pose):
-        self._current_pose_t2 = [msg.x, msg.y, msg.theta]
+    def _t2gp(self, msg):
+        self.pose2 = msg
 
-    def _publish_cmd(self):
-        # For now: simple example → constant forward speed
 
-        self._cmd.linear.x = 1.0
-        self._cmd.angular.z = 0.5
+def main():
+    rclpy.init()
+    node = UI()
 
-        self._cmd_pub.publish(self._cmd)
-
-def main(args=None):
-    """Main entrypoint"""
-
-    # Initialize and run node
     try:
-        rclpy.init()
-        node = TurtleManager()
-        rclpy.spin(node)
+        while rclpy.ok():
+            rclpy.spin_once(node, timeout_sec=0.1)
 
-    # Catch ctrl+c or shutdown request
+            # Select target turtle
+            t = input("Select turtle [1/2]: ").strip()
+            if t not in ('1', '2'):
+                print("Invalid selection.")
+                continue
+
+            pose = node.pose1 if t == '1' else node.pose2
+            if pose is None:
+                print("Pose not received yet.")
+                continue
+
+            print(f"Pose of turtle {t}:\n\tx={pose.x}, y={pose.y}, theta={pose.theta}")
+
+            # Parse command
+            cmd_raw = input("Command: f/b/r value: ").split()
+            if len(cmd_raw) != 2:
+                print("Malformed command.")
+                continue
+
+            action = cmd_raw[0]
+            try:
+                value = float(cmd_raw[1])
+            except ValueError:
+                print("Velocity must be a number.")
+                continue
+
+            theta = pose.theta
+
+            cmd = Comando()
+            cmd.target = int(t)
+            cmd.velocity = Twist()
+
+            if action == 'f':
+                cmd.velocity.linear.x = math.cos(theta) * value
+                cmd.velocity.linear.y = math.sin(theta) * value
+            elif action == 'b':
+                cmd.velocity.linear.x = -math.cos(theta) * value
+                cmd.velocity.linear.y = -math.sin(theta) * value
+            elif action == 'r':
+                cmd.velocity.angular.z = value
+            else:
+                print("Unknown command.")
+                continue
+
+            # Send command for 1 second
+            node.cmd_pub.publish(cmd)
+            time.sleep(1)
+
+            # Send stop command
+            stop = Comando()
+            stop.target = int(t)
+            stop.velocity = Twist()
+            node.cmd_pub.publish(stop)
+
     except (KeyboardInterrupt, ExternalShutdownException):
-      pass
+        pass
 
-    # Destroy node (now) and gracefully exit
-    finally:
-        if node is not None:
-          node.destroy_node()
-        if rclpy.ok():
-          rclpy.shutdown()
+    node.destroy_node()
+    rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

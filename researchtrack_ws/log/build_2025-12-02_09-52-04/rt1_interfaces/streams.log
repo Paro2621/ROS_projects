@@ -1,0 +1,55 @@
+[0.197s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces -DCMAKE_INSTALL_PREFIX=/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces
+[0.209s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.414s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.506s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.531s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.540s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.550s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.563s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.600s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.607s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.856s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.856s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.856s]   rt1_interfaces --arguments-file
+[0.856s]   /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces/rosidl_adapter__arguments__rt1_interfaces.json
+[0.856s]   --output-dir
+[0.856s]   /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces/rosidl_adapter/rt1_interfaces
+[0.856s]   --output-file
+[0.856s]   /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces/rosidl_adapter/rt1_interfaces.idls)
+[0.856s]   returned error code 1:
+[0.856s] 
+[0.857s]   Traceback (most recent call last):
+[0.857s] 
+[0.857s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.857s]     File "<frozen runpy>", line 88, in _run_code
+[0.857s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.857s]       sys.exit(main())
+[0.857s]                ^^^^^^
+[0.857s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.857s]       abs_idl_file = convert_to_idl(
+[0.857s]                      ^^^^^^^^^^^^^^^
+[0.857s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.857s]       return convert_msg_to_idl(
+[0.857s]              ^^^^^^^^^^^^^^^^^^^
+[0.857s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.857s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.857s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.858s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[0.858s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[0.858s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.858s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[0.858s]       self.base_type = BaseType(
+[0.858s]                        ^^^^^^^^^
+[0.858s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[0.858s]       raise InvalidResourceName(
+[0.858s] 
+[0.858s]   rosidl_adapter.parser.InvalidResourceName: 'comando' is an invalid message
+[0.858s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.858s] 
+[0.858s] Call Stack (most recent call first):
+[0.858s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.858s]   CMakeLists.txt:30 (rosidl_generate_interfaces)
+[0.858s] 
+[0.859s] [0m
+[0.859s] -- Configuring incomplete, errors occurred!
+[0.864s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces -DCMAKE_INSTALL_PREFIX=/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces

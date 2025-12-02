@@ -1,0 +1,8 @@
+setup.py
+rt1_interfaces/__init__.py
+rt1_interfaces.egg-info/PKG-INFO
+rt1_interfaces.egg-info/SOURCES.txt
+rt1_interfaces.egg-info/dependency_links.txt
+rt1_interfaces.egg-info/top_level.txt
+rt1_interfaces/msg/__init__.py
+rt1_interfaces/msg/_comando.py

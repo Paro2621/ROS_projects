@@ -1,0 +1,219 @@
+[0.214s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces -DCMAKE_INSTALL_PREFIX=/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces
+[0.225s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.427s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.521s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.547s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.557s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.566s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.578s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.615s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.623s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.123s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.946s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.249s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.252s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.370s] -- Found PythonExtra: /usr/bin/python3  
+[2.756s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.830s] -- Added test 'lint_cmake' to check CMake code style
+[2.832s] -- Added test 'xmllint' to check XML markup files
+[2.838s] -- Configuring done (2.6s)
+[2.871s] -- Generating done (0.0s)
+[2.882s] -- Build files have been written to: /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces
+[2.888s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ric/Desktop/ROS_projects/researchtrack_ws/src/rt1_interfaces -DCMAKE_INSTALL_PREFIX=/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces
+[2.889s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces -- -j8 -l8
+[2.932s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.942s] [  2%] Built target ament_cmake_python_copy_rt1_interfaces
+[3.108s] [  2%] Built target rt1_interfaces__rosidl_generator_type_description
+[3.116s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.126s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.144s] running egg_info
+[3.145s] creating rt1_interfaces.egg-info
+[3.164s] writing rt1_interfaces.egg-info/PKG-INFO
+[3.164s] writing dependency_links to rt1_interfaces.egg-info/dependency_links.txt
+[3.164s] writing top-level names to rt1_interfaces.egg-info/top_level.txt
+[3.164s] writing manifest file 'rt1_interfaces.egg-info/SOURCES.txt'
+[3.219s] reading manifest file 'rt1_interfaces.egg-info/SOURCES.txt'
+[3.220s] writing manifest file 'rt1_interfaces.egg-info/SOURCES.txt'
+[3.247s] [  8%] Built target ament_cmake_python_build_rt1_interfaces_egg
+[3.339s] [  8%] Built target rt1_interfaces__cpp
+[3.372s] [ 11%] [32mBuilding C object CMakeFiles/rt1_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rt1_interfaces/msg/detail/comando__functions.c.o[0m
+[3.375s] [ 14%] [32mBuilding C object CMakeFiles/rt1_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rt1_interfaces/msg/detail/comando__description.c.o[0m
+[3.375s] [ 17%] [32mBuilding C object CMakeFiles/rt1_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rt1_interfaces/msg/detail/comando__type_support.c.o[0m
+[3.446s] [ 20%] [32m[1mLinking C shared library librt1_interfaces__rosidl_generator_c.so[0m
+[3.478s] [ 20%] Built target rt1_interfaces__rosidl_generator_c
+[3.490s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.492s] [ 35%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.492s] [ 35%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.492s] [ 35%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.492s] [ 35%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.492s] [ 38%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.739s] [ 41%] [32mBuilding CXX object CMakeFiles/rt1_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rt1_interfaces/msg/comando__type_support.cpp.o[0m
+[3.808s] [ 44%] [32mBuilding CXX object CMakeFiles/rt1_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rt1_interfaces/msg/detail/dds_fastrtps/comando__type_support.cpp.o[0m
+[3.842s] [ 47%] [32mBuilding CXX object CMakeFiles/rt1_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rt1_interfaces/msg/comando__type_support.cpp.o[0m
+[3.869s] [ 50%] [32mBuilding C object CMakeFiles/rt1_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rt1_interfaces/msg/detail/comando__type_support.c.o[0m
+[3.871s] [ 52%] [32mBuilding CXX object CMakeFiles/rt1_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rt1_interfaces/msg/detail/comando__type_support.cpp.o[0m
+[3.882s] [ 55%] [32mBuilding CXX object CMakeFiles/rt1_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rt1_interfaces/msg/detail/comando__type_support_c.cpp.o[0m
+[3.899s] [ 58%] [32m[1mLinking CXX shared library librt1_interfaces__rosidl_typesupport_c.so[0m
+[3.920s] [ 61%] [32m[1mLinking C shared library librt1_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.951s] [ 61%] Built target rt1_interfaces__rosidl_typesupport_c
+[3.962s] [ 61%] Built target rt1_interfaces__rosidl_typesupport_introspection_c
+[4.149s] [ 64%] [32m[1mLinking CXX shared library librt1_interfaces__rosidl_typesupport_cpp.so[0m
+[4.210s] [ 64%] Built target rt1_interfaces__rosidl_typesupport_cpp
+[4.223s] [ 67%] [32m[1mLinking CXX shared library librt1_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.292s] [ 67%] Built target rt1_interfaces__rosidl_typesupport_introspection_cpp
+[4.343s] [ 70%] [32m[1mLinking CXX shared library librt1_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.388s] [ 70%] Built target rt1_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.392s] [ 73%] [32m[1mLinking CXX shared library librt1_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.437s] [ 73%] Built target rt1_interfaces__rosidl_typesupport_fastrtps_c
+[4.454s] [ 73%] Built target rt1_interfaces
+[4.474s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.730s] [ 76%] Built target rt1_interfaces__py
+[4.749s] [ 79%] [32mBuilding C object CMakeFiles/rt1_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rt1_interfaces/msg/_comando_s.c.o[0m
+[4.891s] [ 82%] [32m[1mLinking C shared library librt1_interfaces__rosidl_generator_py.so[0m
+[4.932s] [ 82%] Built target rt1_interfaces__rosidl_generator_py
+[4.951s] [ 91%] [32mBuilding C object CMakeFiles/rt1_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/rt1_interfaces/_rt1_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.951s] [ 91%] [32mBuilding C object CMakeFiles/rt1_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/rt1_interfaces/_rt1_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[4.951s] [ 91%] [32mBuilding C object CMakeFiles/rt1_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/rt1_interfaces/_rt1_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.046s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_c.so[0m
+[5.052s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[5.065s] [100%] [32m[1mLinking C shared module rosidl_generator_py/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[5.074s] [100%] Built target rt1_interfaces_s__rosidl_typesupport_c
+[5.083s] [100%] Built target rt1_interfaces_s__rosidl_typesupport_introspection_c
+[5.095s] [100%] Built target rt1_interfaces_s__rosidl_typesupport_fastrtps_c
+[5.106s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces -- -j8 -l8
+[5.117s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces
+[5.124s] -- Install configuration: ""
+[5.124s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/ament_index/resource_index/rosidl_interfaces/rt1_interfaces
+[5.124s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/msg/Comando.json
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/comando.h
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__type_support.c
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__functions.h
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__struct.h
+[5.125s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__description.c
+[5.126s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__type_support.h
+[5.126s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__functions.c
+[5.126s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/library_path.sh
+[5.126s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/library_path.dsv
+[5.126s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_generator_c.so
+[5.127s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_generator_c.so" to ""
+[5.127s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces
+[5.127s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg
+[5.127s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail
+[5.127s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__rosidl_typesupport_fastrtps_c.h
+[5.127s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.128s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.128s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.128s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces
+[5.128s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg
+[5.128s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail
+[5.128s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__type_support.hpp
+[5.128s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__struct.hpp
+[5.129s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__builder.hpp
+[5.129s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__traits.hpp
+[5.129s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.129s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/comando.hpp
+[5.129s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces
+[5.129s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg
+[5.129s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail
+[5.129s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__rosidl_typesupport_fastrtps_cpp.hpp
+[5.130s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/dds_fastrtps
+[5.130s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.130s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.130s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.130s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces
+[5.130s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg
+[5.130s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail
+[5.131s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__type_support.c
+[5.131s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__rosidl_typesupport_introspection_c.h
+[5.131s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.131s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_introspection_c.so
+[5.131s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.131s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_c.so
+[5.131s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_c.so" to ""
+[5.131s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces
+[5.131s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg
+[5.132s] -- Up-to-date: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail
+[5.132s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__type_support.cpp
+[5.132s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/include/rt1_interfaces/rt1_interfaces/msg/detail/comando__rosidl_typesupport_introspection_cpp.hpp
+[5.132s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.132s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.132s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_cpp.so
+[5.132s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.132s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/pythonpath.sh
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/pythonpath.dsv
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces-0.0.0-py3.12.egg-info
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces
+[5.133s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/__init__.py
+[5.134s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_introspection_c.so
+[5.134s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.134s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_c.so
+[5.134s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/_rt1_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.134s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/msg
+[5.134s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/msg/__init__.py
+[5.134s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/msg/_comando.py
+[5.135s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/msg/_comando_s.c
+[5.135s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/_rt1_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.135s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/_rt1_interfaces_s.ep.rosidl_typesupport_c.c
+[5.168s] Listing '/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces'...
+[5.168s] Compiling '/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/__init__.py'...
+[5.168s] Listing '/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/msg'...
+[5.169s] Compiling '/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/msg/__init__.py'...
+[5.169s] Compiling '/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/msg/_comando.py'...
+[5.173s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.174s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[5.174s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_introspection_c.so
+[5.174s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[5.174s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_c.so
+[5.175s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages/rt1_interfaces/rt1_interfaces_s__rosidl_typesupport_c.so" to ""
+[5.175s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_generator_py.so
+[5.175s] -- Set non-toolchain portion of runtime path of "/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/librt1_interfaces__rosidl_generator_py.so" to ""
+[5.175s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/msg/Comando.idl
+[5.175s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/msg/Comando.msg
+[5.176s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/ament_index/resource_index/package_run_dependencies/rt1_interfaces
+[5.176s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/ament_index/resource_index/parent_prefix_path/rt1_interfaces
+[5.176s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/ament_prefix_path.sh
+[5.176s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/ament_prefix_path.dsv
+[5.176s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/path.sh
+[5.176s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/environment/path.dsv
+[5.177s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/local_setup.bash
+[5.177s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/local_setup.sh
+[5.177s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/local_setup.zsh
+[5.177s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/local_setup.dsv
+[5.177s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/package.dsv
+[5.177s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/ament_index/resource_index/packages/rt1_interfaces
+[5.178s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_generator_cExport.cmake
+[5.178s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.178s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.178s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.178s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_generator_cppExport.cmake
+[5.179s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.179s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.179s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.179s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.179s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_cExport.cmake
+[5.179s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.179s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.180s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.180s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_cppExport.cmake
+[5.180s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.180s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_generator_pyExport.cmake
+[5.180s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/export_rt1_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.180s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.181s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.181s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.181s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.181s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.181s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.181s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.182s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfacesConfig.cmake
+[5.182s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/cmake/rt1_interfacesConfig-version.cmake
+[5.182s] -- Installing: /home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/share/rt1_interfaces/package.xml
+[5.185s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ric/Desktop/ROS_projects/researchtrack_ws/build/rt1_interfaces
