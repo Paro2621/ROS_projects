@@ -1,8 +1,8 @@
 '''
 A node that checks the relative distance between turtle1 and turtle2 and:
-    1. publish on a topic the distance (you can use a std_msgs/Float32 for that)
-    2. stops the moving turtle if the two turtles are “too close” (you may set a threshold to monitor that)
-    3. stops the moving turtle if the position is too close to the boundaries (.e.g, x or y > 10.0, x or y < 1.0
+    [x] publish on a topic the distance (you can use a std_msgs/Float32 for that)
+    [ ] stops the moving turtle if the two turtles are “too close” (you may set a threshold to monitor that)
+    [ ] stops the moving turtle if the position is too close to the boundaries (.e.g, x or y > 10.0, x or y < 1.0
 '''
 
 import rclpy
@@ -28,11 +28,11 @@ class TurtleManager(Node):
         self._cmd_pub = self.create_publisher(Float32, 'turtle1/distance', 10)
 
         # Timer to publish commands periodically
-        self._timer = self.create_timer(0.5, self._publishDistance)
+        self._timer = self.create_timer(1, self._publishDistance)
 
         # Internal state
-        self._current_pose_t1 = [5,5,0]
-        self._current_pose_t2 = [5,5,0]
+        self._current_pose_t1 = None
+        self._current_pose_t2 = None
         self._cmd = Twist()
         self._distance = Float32()
         self.distance = None
@@ -40,9 +40,9 @@ class TurtleManager(Node):
     def _publishDistance(self):
         t1 = self._current_pose_t1
         t2 = self._current_pose_t2 
-        self._distance.data = math.sqrt((t1[0] - t2[0])**2 + (t1[1] - t2[1])**2)
-        print(self._distance)
-        self._cmd_pub.publish(self._distance)
+        if (t1 != None) & (t2 != None):
+            self._distance.data = math.sqrt((t1[0] - t2[0])**2 + (t1[1] - t2[1])**2)
+            self._cmd_pub.publish(self._distance)
 
     def _t1pose(self, msg: Pose):
         self._current_pose_t1 = [msg.x, msg.y, msg.theta]

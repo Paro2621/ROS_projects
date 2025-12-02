@@ -1,3 +1,0 @@
-[console_scripts]
-TurtleManager = assignment1_rt.TurtleManager:main
-UI = assignment1_rt.UI:main
