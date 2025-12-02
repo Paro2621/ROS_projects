@@ -3,12 +3,11 @@ TurtleManager (node2)
 A node that checks the relative distance between turtle1 and turtle2 and:
     [x] publish on a topic the distance (you can use a std_msgs/Float32 for that)
     [ ] stops the moving turtle if the two turtles are “too close” (you may set a threshold to monitor that)
-    [ ] stops the moving turtle if the position is too close to the boundaries (.e.g, x or y > 10.0, x or y < 1.0
+    [x] stops the moving turtle if the position is too close to the boundaries (.e.g, x or y > 10.0, x or y < 1.0
 '''
 
 import rclpy
 import math
-import time
 
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
@@ -26,28 +25,22 @@ class TurtleManager(Node):
         # Subscribers
         self.sub1 = self.create_subscription(Pose, 'turtle1/pose', self._t1_getPose, 10)
         self.sub2 = self.create_subscription(Pose, 'turtle2/pose', self._t2_getPose, 10)
-
-        self.sub3 = self.create_subscription(Comando, 'UI/comando', self._applyComando, 10)
+        self.sub3 = self.create_subscription(Comando, 'UI/comando', self._getComando, 10)
 
         # Publisher
         self.pub1 = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
         self.pub2 = self.create_publisher(Twist, 'turtle2/cmd_vel', 10)
+        self.pub3 = self.create_publisher(Float32, 'TurtleManager/distance', 10)
 
-        self.pub_dist = self.create_publisher(Float32, 'TurtleManager/distance', 10)
+        # Timer to publish commands periodically
+        self._timer1 = self.create_timer(0.1, self._publishDistance)
+        self._timer2 = self.create_timer(0.1, self._applyComando)
         
         # Internal state
         self.t1_Pose = None
         self.t2_Pose = None
+        self.cmd = None
         self._distance = Float32()
-
-        # Timer to publish commands periodically
-        self._timer = self.create_timer(0.1, self._publishDistance)
-
-    def _applyComando(self, cmd):
-        if cmd.target == 1:
-            self.pub1.publish(cmd.velocity)
-        else:
-            self.pub2.publish(cmd.velocity)
 
     def _t1_getPose(self, msg): # turtle 1 get pose
         self.t1_Pose = msg
@@ -55,12 +48,57 @@ class TurtleManager(Node):
     def _t2_getPose(self, msg):
         self.t2_Pose = msg
 
+    # è importante che _getComando e _applyComando siano separati:
+    #   _getComando     -> viene modificato solo quando UI gli invia un nuovo comando
+    #   _applyComando   -> deve essere eseguito costantemente per poter aggiornare la posizione della turtle e fare uncheck della posizione
+      
+    def _getComando(self, msg):
+        self.cmd = msg
+
+    def _applyComando(self):
+        if self.cmd is None:
+            return
+        
+        cmd = self.cmd
+
+        if cmd.target == 1:
+            myPose = self.t1_Pose
+            otherPose = self.t2_Pose
+        else:
+            myPose = self.t2_Pose
+            otherPose = self.t1_Pose
+
+        if myPose is None:
+            return
+        
+        dt = 0.1 # uguale alla frequenza del loop _applyComando
+        heading = myPose.theta
+        dx = math.cos(heading) * cmd.velocity.linear.x * dt
+        dy = math.sin(heading) * cmd.velocity.linear.x * dt
+
+        next_x = myPose.x + dx
+        next_y = myPose.y + dy
+
+        # boundary check
+        if next_x < 1.0 or next_x > 10.0 or next_y < 1.0 or next_y > 10.0:
+            cmd.velocity.linear.x = 0.0
+
+        if math.sqrt((next_x - otherPose.x)**2 + (next_y - otherPose.y)**2) < 1.0:
+            cmd.velocity.linear.x = 0.0
+
+        # publish
+        if cmd.target == 1:
+            self.pub1.publish(cmd.velocity)
+        else:
+            self.pub2.publish(cmd.velocity)
+
+
     def _publishDistance(self):
         t1 = self.t1_Pose
         t2 = self.t2_Pose 
         if t1 is not None and t2 is not None:
             self._distance.data = math.sqrt((t1.x - t2.x)**2 + (t1.y - t2.y)**2)
-            self.pub_dist.publish(self._distance)
+            self.pub3.publish(self._distance)
 
 def main(args=None):
     """Main entrypoint"""
@@ -69,7 +107,6 @@ def main(args=None):
     try:
         rclpy.init()
         ThisNode = TurtleManager()
-
 
         rclpy.spin(ThisNode)
 

@@ -1,0 +1,25 @@
+[0.876s] Invoking command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/src/assignment1_rt': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment1_rt build --build-base /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build install --record /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/install.log --single-version-externally-managed install_data
+[1.165s] running egg_info
+[1.186s] writing ../../build/assignment1_rt/assignment1_rt.egg-info/PKG-INFO
+[1.187s] writing dependency_links to ../../build/assignment1_rt/assignment1_rt.egg-info/dependency_links.txt
+[1.187s] writing entry points to ../../build/assignment1_rt/assignment1_rt.egg-info/entry_points.txt
+[1.187s] writing requirements to ../../build/assignment1_rt/assignment1_rt.egg-info/requires.txt
+[1.187s] writing top-level names to ../../build/assignment1_rt/assignment1_rt.egg-info/top_level.txt
+[1.230s] reading manifest file '../../build/assignment1_rt/assignment1_rt.egg-info/SOURCES.txt'
+[1.231s] writing manifest file '../../build/assignment1_rt/assignment1_rt.egg-info/SOURCES.txt'
+[1.231s] running build
+[1.231s] running build_py
+[1.231s] copying assignment1_rt/TurtleManager.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt
+[1.231s] running install
+[1.238s] running install_lib
+[1.259s] copying /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build/lib/assignment1_rt/TurtleManager.py -> /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt
+[1.260s] byte-compiling /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt/TurtleManager.py to TurtleManager.cpython-312.pyc
+[1.261s] running install_data
+[1.261s] running install_egg_info
+[1.284s] removing '/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt-0.1.0-py3.12.egg-info' (and everything under it)
+[1.284s] Copying ../../build/assignment1_rt/assignment1_rt.egg-info to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages/assignment1_rt-0.1.0-py3.12.egg-info
+[1.285s] running install_scripts
+[1.426s] Installing TurtleManager script to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/assignment1_rt
+[1.426s] Installing UI script to /home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/assignment1_rt
+[1.427s] writing list of installed files to '/home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/install.log'
+[1.462s] Invoked command in '/home/ric/Desktop/ROS_projects/researchtrack_ws/src/assignment1_rt' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/rt1_interfaces/lib/python3.12/site-packages:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/turtlesim_controller/lib/python3.12/site-packages:/home/ric/Desktop/ROS_projects/researchtrack_ws/install/assignment1_rt/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assignment1_rt build --build-base /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/build install --record /home/ric/Desktop/ROS_projects/researchtrack_ws/build/assignment1_rt/install.log --single-version-externally-managed install_data

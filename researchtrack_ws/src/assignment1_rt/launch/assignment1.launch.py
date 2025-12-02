@@ -34,7 +34,6 @@ def generate_launch_description():
                     package='assignment1_rt',
                     executable='TurtleManager',
                     name='TurtleManager',
-                    output='screen'
                 ),
             ]
         ),
