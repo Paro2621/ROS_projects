@@ -9,7 +9,8 @@ The repository serves as:
 - a reference for future development,
 - a showcase of work completed during university robotics courses.
 
-## Instruction for ResearchTrack1
+## ResearchTrack1
+### Instruction
 1. clone the repository
 ```bash
 git clone https://github.com/Paro2621/ROS_projects.git
@@ -27,7 +28,7 @@ source install/setup.bash
 ros2 run assignment1_rt UI
 ```
 
-## ResearchTrack1 architecture
+### Architecture
 ![RT1_task1_architecture](https://github.com/user-attachments/assets/5152039c-b4b2-4c78-9b16-40943924a45d)
 
 ## Note on Python
